@@ -232,3 +232,30 @@ button {
     background-color: #EAF2FD !important;
     color: #0A0A0A;
 }
+
+/*login add child*/
+.login {
+    height: 100vh;
+    background-color: #F5F7FC;
+}
+.add-child-btn {
+    text-decoration: none;
+    transition: 0.3s;
+}
+.add-child-btn:hover {
+    background-color: rgba(13, 110, 253, 1);
+    color: #fff;
+}
+@media screen and (max-width: 540px){
+    .login-add .login__block {
+        flex-wrap: wrap;
+    }
+    .login-add .login__block div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .login-add .login__block .add-child-btn {
+        width: 100%;
+        height: 200px;
+    }
+}
