@@ -10,82 +10,136 @@
 <body>
 <div class="row">
     <main class="col-sm-10 col-md-9 ms-sm-auto col-lg-10 col-xl-9">
-        <div class="content bg-light schedule m-xs-0 p-xs-0 m-sm-0 p-sm-0 p-xl-5 mt-xl-3 rounded-3">
+        <div class="content bg-light schedule m-xs-0 m-sm-0 p-4 p-xl-5 mt-xl-3 rounded-3">
             <h2 class="fw-bold">Расписание</h2>
-            <div class="schedule-actions d-flex align-items-center justify-content-between">
-                <div class="select" data-state="">
-                    <div class="select__title" data-default="Option 0">
-                        <div class="select__title-text">Ноябрь 2023</div>
-                        <div class="select__arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M10.9037 7C11.0733 7 11.1659 7.19777 11.0574 7.32804L8.15104 10.8156C8.07108 10.9116 7.92371 10.9116 7.84375 10.8156L4.93743 7.32804C4.82887 7.19777 4.9215 7 5.09107 7H10.9037Z" fill="#A9A9A9"/>
-                            </svg>
+            <div class="schedule-actions d-flex align-items-center justify-content-between flex-wrap gap-3">
+                <div class="select-list d-flex gap-2 flex-wrap">
+                    <div class="select" data-state="">
+                        <div class="select__title" data-default="Option 0">
+                            <div class="select__title-text">Ноябрь 2023</div>
+                            <div class="select__arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M10.9037 7C11.0733 7 11.1659 7.19777 11.0574 7.32804L8.15104 10.8156C8.07108 10.9116 7.92371 10.9116 7.84375 10.8156L4.93743 7.32804C4.82887 7.19777 4.9215 7 5.09107 7H10.9037Z" fill="#A9A9A9"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="select__content">
+                            <input id="11" class="select__input" type="radio"/>
+                            <label for="11" class="select__label">Ноябрь 2023</label>
+                            <input id="12" class="select__input" type="radio"/>
+                            <label for="12" class="select__label">Декабрь 2023</label>
                         </div>
                     </div>
-                    <div class="select__content">
-                        <input id="11" class="select__input" type="radio"/>
-                        <label for="11" class="select__label">Ноябрь 2023</label>
-                        <input id="12" class="select__input" type="radio"/>
-                        <label for="12" class="select__label">Декабрь 2023</label>
+                    <div class="select" data-state="">
+                        <div class="select__title" data-default="Option 0">
+                            <div class="select__title-text">2 класс</div>
+                            <div class="select__arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M10.9037 7C11.0733 7 11.1659 7.19777 11.0574 7.32804L8.15104 10.8156C8.07108 10.9116 7.92371 10.9116 7.84375 10.8156L4.93743 7.32804C4.82887 7.19777 4.9215 7 5.09107 7H10.9037Z" fill="#A9A9A9"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="select__content">
+                            <input id="2" class="select__input" type="radio"/>
+                            <label for="2" class="select__label">2 класс</label>
+                            <input id="3" class="select__input" type="radio"/>
+                            <label for="3" class="select__label">3 класс</label>
+                        </div>
+                    </div>
+                    <div class="select" data-state="">
+                        <div class="select__title" data-default="Option 0">
+                            <div class="select__title-text">Все предметы</div>
+                            <div class="select__arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M10.9037 7C11.0733 7 11.1659 7.19777 11.0574 7.32804L8.15104 10.8156C8.07108 10.9116 7.92371 10.9116 7.84375 10.8156L4.93743 7.32804C4.82887 7.19777 4.9215 7 5.09107 7H10.9037Z" fill="#A9A9A9"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="select__content">
+                            <input id="subject1" class="select__input" type="radio"/>
+                            <label for="subject1" class="select__label">Специальность</label>
+                            <input id="subject2" class="select__input" type="radio"/>
+                            <label for="subject2" class="select__label">Сольфеджио</label>
+                        </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary">Добавить урок</a>
+                <a href="#" class="btn btn-purple px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H12.75V20.25C12.75 20.4489 12.671 20.6397 12.5303 20.7803C12.3897 20.921 12.1989 21 12 21C11.8011 21 11.6103 20.921 11.4697 20.7803C11.329 20.6397 11.25 20.4489 11.25 20.25V12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H11.25V3.75C11.25 3.55109 11.329 3.36032 11.4697 3.21967C11.6103 3.07902 11.8011 3 12 3C12.1989 3 12.3897 3.07902 12.5303 3.21967C12.671 3.36032 12.75 3.55109 12.75 3.75V11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12Z" fill="white"/>
+                    </svg>
+                    Добавить урок
+                </a>
             </div>
-            <div class="table-responsive mt-4 table-container">
-                <table class="table table-bordered text-center">
+            <div class="table-responsive mt-4">
+                <table class="table table-bordered text-start bg-white">
                     <thead class="table-white bg-white table__heading">
                     <tr class="align-middle">
                         <th scope="col" class=""></th>
-                        <th scope="col" class="col-1 p-3">20.11 <br> Пн</th>
-                        <th scope="col" class="col-1 p-3">21.11 <br> Вт</th>
-                        <th scope="col" class="col-1 p-3">22.11 <br> Ср</th>
-                        <th scope="col" class="col-1 p-3">23.11 <br> Чт</th>
-                        <th scope="col" class="col-1 p-3">24.11 <br> Пт</th>
-                        <th scope="col" class="col-1 p-3">25.11 <br> Сб</th>
-                        <th scope="col" class="col-1 p-3">26.11 <br> Вс</th>
-                        <th scope="col" class="col-1 p-3">27.11 <br> Пн</th>
-                        <th scope="col" class="col-1 p-3">28.11 <br> Вт</th>
+                        <th scope="col" class="col-1 p-3">20.11 <br> <span class="text-muted fw-normal">Пн</span></th>
+                        <th scope="col" class="col-1 p-3">21.11 <br> <span class="text-muted fw-normal">Вт</span></th>
+                        <th scope="col" class="col-1 p-3">22.11 <br> <span class="text-muted fw-normal">Ср</span></th>
+                        <th scope="col" class="col-1 p-3">23.11 <br> <span class="text-muted fw-normal">Чт</span></th>
+                        <th scope="col" class="col-1 p-3">24.11 <br> <span class="text-muted fw-normal">Пт</span></th>
+                        <th scope="col" class="col-1 p-3">25.11 <br> <span class="text-muted fw-normal">Сб</span></th>
+                        <th scope="col" class="col-1 p-3">26.11 <br> <span class="text-muted fw-normal">Вс</span></th>
+                        <th scope="col" class="col-1 p-3">27.11 <br> <span class="text-muted fw-normal">Пн</span></th>
+                        <th scope="col" class="col-1 p-3">28.11 <br> <span class="text-muted fw-normal">Вт</span></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr class="align-middle">
-                        <th scope="row" class="grade">2 кл</th>
-                        <td class="table-item p-3">
-                            <p>16:30 — 17:10</p>
-                            <div class="name">Григорьева Е. к.205</div>
+                        <th scope="row" class="grade text-center">2 кл</th>
+                        <td class="table-item p-3 text-cancel">
+                            <p class="text-danger">Отменен</p>
                             <div class="subject">Спец-ть</div>
+                            <div class="name">Григорьева Е. к.205</div>
+                        </td>
+                        <td class="table-item p-3 position-relative">
+                            <p>16:30 — 17:10</p>
+                            <div class="subject">Спец-ть</div>
+                            <div class="name">Григорьева Е. к.205</div>
+                            <div class="schedule-option bg-white p-3 rounded-3 position-absolute">
+                                <a href="#" class="d-block text-dark mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9662 1.76221L14.7374 5.53345L6.05688 14.214H2.28564V10.4428L10.9662 1.76221ZM10.9662 3.64783L10.0175 4.59653L11.9031 6.48215L12.8518 5.53345L10.9662 3.64783ZM10.9603 7.42497L9.07468 5.53934L3.61898 10.995V12.8806H5.5046L10.9603 7.42497Z" fill="black"/>
+                                    </svg>
+                                    Редактировать
+                                </a>
+                                <a href="#" class="text-danger d-inline-block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path d="M13.5 3.4H11.1V3C11.1 2.57565 10.9314 2.16869 10.6314 1.86863C10.3313 1.56857 9.92435 1.4 9.5 1.4H6.5C6.07565 1.4 5.66869 1.56857 5.36863 1.86863C5.06857 2.16869 4.9 2.57565 4.9 3V3.4H2.5C2.34087 3.4 2.18826 3.46321 2.07574 3.57574C1.96321 3.68826 1.9 3.84087 1.9 4C1.9 4.15913 1.96321 4.31174 2.07574 4.42426C2.18826 4.53679 2.34087 4.6 2.5 4.6H2.9V13.5C2.9 13.7917 3.01589 14.0715 3.22218 14.2778C3.42847 14.4841 3.70826 14.6 4 14.6H12C12.2917 14.6 12.5715 14.4841 12.7778 14.2778C12.9841 14.0715 13.1 13.7917 13.1 13.5V4.6H13.5C13.6591 4.6 13.8117 4.53679 13.9243 4.42426C14.0368 4.31174 14.1 4.15913 14.1 4C14.1 3.84087 14.0368 3.68826 13.9243 3.57574C13.8117 3.46321 13.6591 3.4 13.5 3.4ZM6.1 3C6.1 2.89391 6.14214 2.79217 6.21716 2.71716C6.29217 2.64214 6.39391 2.6 6.5 2.6H9.5C9.60609 2.6 9.70783 2.64214 9.78284 2.71716C9.85786 2.79217 9.9 2.89391 9.9 3V3.4H6.1V3ZM11.9 13.4H4.1V4.6H11.9V13.4ZM7.1 11V7C7.1 6.84087 7.03679 6.68826 6.92426 6.57574C6.81174 6.46321 6.65913 6.4 6.5 6.4C6.34087 6.4 6.18826 6.46321 6.07574 6.57574C5.96321 6.68826 5.9 6.84087 5.9 7V11C5.9 11.1591 5.96321 11.3117 6.07574 11.4243C6.18826 11.5368 6.34087 11.6 6.5 11.6C6.65913 11.6 6.81174 11.5368 6.92426 11.4243C7.03679 11.3117 7.1 11.1591 7.1 11ZM10.1 11V7C10.1 6.84087 10.0368 6.68826 9.92426 6.57574C9.81174 6.46321 9.65913 6.4 9.5 6.4C9.34087 6.4 9.18826 6.46321 9.07574 6.57574C8.96321 6.68826 8.9 6.84087 8.9 7V11C8.9 11.1591 8.96321 11.3117 9.07574 11.4243C9.18826 11.5368 9.34087 11.6 9.5 11.6C9.65913 11.6 9.81174 11.5368 9.92426 11.4243C10.0368 11.3117 10.1 11.1591 10.1 11Z" fill="#E40000" stroke="#E40000" stroke-width="0.2"/>
+                                    </svg>
+                                    Удалить
+                                </a>
+                            </div>
                         </td>
                         <td class="table-item p-3">
                             <p>16:30 — 17:10</p>
-                            <div class="name">Григорьева Е. к.205</div>
                             <div class="subject">Спец-ть</div>
-                        </td>
-                        <td class="table-item p-3">
-                            <p>16:30 — 17:10</p>
                             <div class="name">Григорьева Е. к.205</div>
-                            <div class="subject">Спец-ть</div>
                         </td>
                         <td class="table-item p-3"></td>
                         <td class="table-item p-3">
                             <p>16:30 — 17:10</p>
-                            <div class="name">Григорьева Е. к.205</div>
                             <div class="subject">Спец-ть</div>
+                            <div class="name">Григорьева Е. к.205</div>
                         </td>
                         <td class="table-item p-3"></td>
                         <td class="table-item p-3">
                             <p>16:30 — 17:10</p>
-                            <div class="name">Григорьева Е. к.205</div>
                             <div class="subject">Спец-ть</div>
+                            <div class="name">Григорьева Е. к.205</div>
                         </td>
                         <td class="table-item p-3">
                             <p>16:30 — 17:10</p>
-                            <div class="name">Григорьева Е. к.205</div>
                             <div class="subject">Спец-ть</div>
+                            <div class="name">Григорьева Е. к.205</div>
                         </td>
                         <td class="table-item p-3">
                             <p>16:30 — 17:10</p>
-                            <div class="name">Григорьева Е. к.205</div>
                             <div class="subject">Спец-ть</div>
+                            <div class="name">Григорьева Е. к.205</div>
+
                         </td>
                     </tr>
                     </tbody>
