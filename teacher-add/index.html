@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Teachers Add</title>
+</head>
+<body>
+<div class="container">
+    <div class="window row d-flex text-center teacher-add">
+        <form class="mx-auto align-middle m-auto p-5 bg-white rounded-4 col-xs-9 col-sm-7 col-md-6 col-lg-4 position-relative">
+            <h2 class="fw-bold mb-4">Новый преподаватель</h2>
+            <div class="form-group my-3">
+                <input type="text" class="form-control p-3" id="FIO" aria-describedby="emailHelp" placeholder="ФИО">
+            </div>
+            <div class="form-group my-3">
+                <input type="text" class="form-control p-3" id="subject" aria-describedby="emailHelp" placeholder="Предмет">
+            </div>
+            <div class="form-group my-3 position-relative">
+                <div class="file-add position-absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H12.75V20.25C12.75 20.4489 12.671 20.6397 12.5303 20.7803C12.3897 20.921 12.1989 21 12 21C11.8011 21 11.6103 20.921 11.4697 20.7803C11.329 20.6397 11.25 20.4489 11.25 20.25V12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H11.25V3.75C11.25 3.55109 11.329 3.36032 11.4697 3.21967C11.6103 3.07902 11.8011 3 12 3C12.1989 3 12.3897 3.07902 12.5303 3.21967C12.671 3.36032 12.75 3.55109 12.75 3.75V11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12Z" fill="black" fill-opacity="0.35"/>
+                    </svg>
+                </div>
+                <input type="text" class="form-control p-3" id="photo" placeholder="Фото">
+            </div>
+            <div class="form-group my-3">
+                <input type="text" class="form-control p-3" id="addition" placeholder="Дополнительно">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-1 mb-3 p-3">Добавить</button>
+            <a href="#" class="teacher-back position-absolute">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_45_496)">
+                        <path d="M19.2132 4.92893C19.3695 5.08521 19.4573 5.29717 19.4573 5.51819C19.4573 5.7392 19.3695 5.95116 19.2132 6.10744L13.3206 12L19.2132 17.8926C19.3695 18.0488 19.4573 18.2608 19.4573 18.4818C19.4573 18.7028 19.3695 18.9148 19.2132 19.0711C19.0569 19.2273 18.845 19.3151 18.6239 19.3151C18.4029 19.3151 18.191 19.2273 18.0347 19.0711L12.1421 13.1785L6.24958 19.0711C6.0933 19.2273 5.88134 19.3151 5.66032 19.3151C5.43931 19.3151 5.22735 19.2273 5.07107 19.0711C4.91479 18.9148 4.82699 18.7028 4.82699 18.4818C4.82699 18.2608 4.91479 18.0488 5.07107 17.8926L10.9636 12L5.07107 6.10744C4.91479 5.95116 4.82699 5.7392 4.82699 5.51819C4.82699 5.29717 4.91479 5.08521 5.07107 4.92893C5.22735 4.77265 5.43931 4.68485 5.66032 4.68485C5.88134 4.68485 6.0933 4.77265 6.24958 4.92893L12.1421 10.8215L18.0347 4.92893C18.191 4.77265 18.4029 4.68485 18.6239 4.68485C18.845 4.68485 19.0569 4.77265 19.2132 4.92893Z" fill="black" fill-opacity="0.35"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_45_496">
+                            <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </form>
+    </div>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
