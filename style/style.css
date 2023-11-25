@@ -85,6 +85,10 @@ button {
     right: 0;
 }
 
+.students-list .student {
+    height: 150px;
+}
+
 /*News page admin*/
 .news .news-actions .news-search input{
     outline: none;
