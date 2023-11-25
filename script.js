@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     });
 
+    //select custom
     const selectSingle = document.querySelectorAll('.select');
     if (selectSingle) {
         selectSingle.forEach(element => {
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    //schedule window edit
     const tableItems = document.querySelectorAll('.table-item');
     if (tableItems) {
         tableItems.forEach(element => {
@@ -39,4 +41,36 @@ document.addEventListener("DOMContentLoaded", function() {
             })
         })
     }
+
+    //swiper init
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        autoplay: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        freeMode: true,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1380: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            }
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 });

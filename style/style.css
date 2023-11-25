@@ -12,9 +12,17 @@ button {
     background: inherit;
     border: none;
 }
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
 .btn-purple {
     background-color: #5247CC;
     color: #fff;
+}
+.text-purple {
+    color: #5247CC;
 }
 .text-cancel {
     background: linear-gradient(0deg, rgba(228, 0, 0, 0.05) 0%, rgba(228, 0, 0, 0.05) 100%), #FFF;
@@ -285,4 +293,22 @@ button {
 .chat .search .search-btn {
     top: 5px;
     right: 40px;
+}
+.slider-news .swiper-slide {
+    border-radius: 12px;
+}
+.slider-news .swiper-slide img {
+    height: 216px;
+    border-radius: 15px;
+}
+.slider-news .swiper-slide .image .option{
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+}
+.slider-news .swiper-button-prev {
+    color: #5247CC;
+}
+.slider-news .swiper-button-next {
+    color: #5247CC;
 }
